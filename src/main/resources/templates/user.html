@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+<form th:method="GET" th:action="@{/logout}">
+    <input type="submit" value="Logout"/>
+</form>
+<br/>
+
+<p th:text="${user.getId()}">VALUE</p>
+<p th:text="${user.getName()}">VALUE</p>
+<p th:text="${user.getLastName()}">VALUE</p>
+<p th:text="${user.getEmail()}">VALUE</p>
+<br/>
+<form th:method="GET" th:action="@{/admin}">
+    <input type="submit" value="Back"/>
+</form>
+</body>
+</html>
